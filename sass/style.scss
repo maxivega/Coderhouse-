@@ -1,0 +1,148 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:300,400,500,700');
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+$texto:Roboto, sans-serif;
+$titulos: "Roboto Slab", serif;
+
+body {
+	font-family: $texto;
+	padding-top:50px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:$titulos;
+	font-weigth: 700;
+}
+
+
+body, html {
+	height: 100%;
+}
+
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+header {position:relative;
+		.wrapper-texto{
+			position: absolute;
+			top:0;
+			width:100%;
+			height: 100%;
+			display:flex;
+			align-items: center;
+			h1, h3{
+				color:white;
+				text-shadow: 0 0 10px rgba(0,0,0,0.8)
+			}
+
+		}
+}
+
+
+/*
+header {
+	height:100%;
+	background:yellow;
+	display:flex;
+	align-items: center;
+	background: url("../img/descarga.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    
+
+    h1, h3{
+    	color:white;
+    	font-size:100px;
+    	text-shadow: 5px 5px 0 rgba(0,0,0,8);
+    }
+    h3{
+    	font-size: 40px;
+    }
+
+}
+*/
+
+
+
+.social{
+	display:flex;
+	list-style:none;
+	padding:0;
+	li{
+		padding: 10px;
+		a{
+			color: #AAA;
+			transition: .5s;
+			display:inline-block;
+			span{
+				font-size: 30px;
+			}
+			&:hover{
+				transform: scale(1.3);
+			}
+		}
+	}
+
+}
+
+section{
+	padding: 60px 0;
+	&#curso{
+		.destacado{
+			font-size:18px;
+			font-weigth:300;
+			line-height:25px;
+		}
+	}
+	&#frase{
+		background: rgb(255,255,255); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	&#mapa {
+		padding:0;
+	}
+
+}
+
+
+nav{ 
+	&.navbar{
+		margin-bottom: 0;
+	}
+}
+
